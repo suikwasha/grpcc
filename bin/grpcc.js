@@ -10,6 +10,7 @@ program
   .version(require('../package.json').version)
   .option('-p, --proto <path>', 'path to a protobuf file describing the service (required)')
   .option('-d, --directory <path>', 'path to a protobuf file directory')
+  .option('-I, --includeDir <path>', 'path to a protobuf include directory')
   .option('-a, --address <host:port>', 'the address of the service to connect to (required)')
   .option('-s, --service <name>', 'the name of the service to connect to (optional)')
   .option('-i, --insecure', 'use an insecure connection (default=false)', false)
